@@ -4,7 +4,7 @@
  * Plugin Name: Custom Events Templates Loader
  * Description: Load custom event templates from the plugin.
  * Version: 1.0
- * Author: Your Name
+ * Author: sato kanamu
  */
 
 defined('ABSPATH') or die('No script kiddies please!');
