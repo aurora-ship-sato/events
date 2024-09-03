@@ -1,0 +1,726 @@
+[
+    {
+        "key": "group_5f694267a7c7c",
+        "title": "イベント情報",
+        "fields": [
+            {
+                "key": "field_5f69444dcba85",
+                "label": "共通項目",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f69447acba86",
+                "label": "サムネイル画像",
+                "name": "EntryData_ListImage1",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "一覧画面にサムネイル画像として表示されます",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60eb90ae57808",
+                "label": "見出し画像",
+                "name": "EntryData_ListImage_gl",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "見出し画像を設定してください。※3枚まで\r\nまた、拡大機能を入れる場合はチェックボックスにチェックをしてください。",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 3,
+                "layout": "table",
+                "button_label": "行を追加",
+                "sub_fields": [
+                    {
+                        "key": "field_60eb912a57809",
+                        "label": "画像",
+                        "name": "EntryData_ListImage",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "イベントの雰囲気が伝わるイメージ画像を設定",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "parent_repeater": "field_60eb90ae57808"
+                    },
+                    {
+                        "key": "field_60eb91805780a",
+                        "label": "画像ズームの有無",
+                        "name": "EntryData_Imagezoom",
+                        "aria-label": "",
+                        "type": "true_false",
+                        "instructions": "詳細ページにてクリックした際に画像が拡大されます。",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "parent_repeater": "field_60eb90ae57808"
+                    }
+                ],
+                "rows_per_page": 20
+            },
+            {
+                "key": "field_634e07f39caab",
+                "label": "イベントの状態",
+                "name": "EntryData_StatusBtn",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "type-a": "開催中",
+                    "type-b": "準備中　",
+                    "type-c": "終了　"
+                },
+                "default_value": "type-a",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5f69473fcba8a",
+                "label": "「お申し込み」フォーム表示",
+                "name": "EntryData_ContactBtn",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "「お申し込み」フォームを表示しない場合はチェックを外して下さい",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5f694771cba8b",
+                "label": "一言",
+                "name": "EntryData_CustomerComment",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f69478bcba8c",
+                "label": "備考",
+                "name": "EntryData_Note",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベントの備考があれば記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f69479ecba8d",
+                "label": "自由記載欄",
+                "name": "EntryData_freearea",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5f6948fa3426d",
+                "label": "会場1",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f6949113426e",
+                "label": "会場名",
+                "name": "EntryData_Area1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の会場名を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f6949243426f",
+                "label": "開催日時",
+                "name": "EntryData_Schedule1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の開催日時を記載<br>\r\n例）○月○日（○）○○時○○分～○○時○○分",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f69495034270",
+                "label": "会場住所",
+                "name": "EntryData_Area_Address1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の住所を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f69496334271",
+                "label": "会場地図",
+                "name": "EntryData_Map1",
+                "aria-label": "",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "35.681236",
+                "center_lng": "139.767125",
+                "zoom": 16,
+                "height": 300
+            },
+            {
+                "key": "field_5f69498c34272",
+                "label": "会場地図詳細ページURL",
+                "name": "EntryData_AreaUrl1",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "任意のアクセスマップページ等へのリンクボタンを表示したい場合は、こちらに該当ページのURLを入力してください。<br>\r\n空欄の場合、上のMAPで指定した場所のGoogleMAPページへのリンクボタンが表示されます。",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5f6949ab34273",
+                "label": "参加費",
+                "name": "EntryData_Fee1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の参加費を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f6949bd34274",
+                "label": "定員",
+                "name": "EntryData_Capacity1",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の定員数を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694a314daf2",
+                "label": "会場2",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f694a424daf3",
+                "label": "会場名",
+                "name": "EntryData_Area2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の会場名を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694a544daf4",
+                "label": "開催日時",
+                "name": "EntryData_Schedule2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の開催日時を記載<br>\r\n例）○月○日（○）○○時○○分～○○時○○分",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694a654daf5",
+                "label": "会場住所",
+                "name": "EntryData_Area_Address2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の住所を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694a7b4daf6",
+                "label": "会場地図",
+                "name": "EntryData_Map2",
+                "aria-label": "",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "35.681236",
+                "center_lng": "139.767125",
+                "zoom": 16,
+                "height": 300
+            },
+            {
+                "key": "field_5f694a9f4daf7",
+                "label": "会場地図詳細ページURL",
+                "name": "EntryData_AreaUrl2",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "任意のアクセスマップページ等へのリンクボタンを表示したい場合は、こちらに該当ページのURLを入力してください。<br>\r\n空欄の場合、上のMAPで指定した場所のGoogleMAPページへのリンクボタンが表示されます。",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5f694ad34daf8",
+                "label": "参加費",
+                "name": "EntryData_Fee2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の参加費を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694aee4daf9",
+                "label": "定員",
+                "name": "EntryData_Capacity2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の定員数を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694c20be96d",
+                "label": "会場3",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f694e38be96e",
+                "label": "会場名",
+                "name": "EntryData_Area3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の会場名を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694e49be96f",
+                "label": "開催日時",
+                "name": "EntryData_Schedule3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の開催日時を記載<br>\r\n例）○月○日（○）○○時○○分～○○時○○分",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694e5dbe970",
+                "label": "会場住所",
+                "name": "EntryData_Area_Address3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "イベント会場の住所を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694efbbe971",
+                "label": "会場地図",
+                "name": "EntryData_Map3",
+                "aria-label": "",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "35.681236",
+                "center_lng": "139.767125",
+                "zoom": 16,
+                "height": 300
+            },
+            {
+                "key": "field_5f694f1abe972",
+                "label": "会場地図詳細ページURL",
+                "name": "EntryData_AreaUrl3",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "任意のアクセスマップページ等へのリンクボタンを表示したい場合は、こちらに該当ページのURLを入力してください。<br>\r\n空欄の場合、上のMAPで指定した場所のGoogleMAPページへのリンクボタンが表示されます。",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_5f694feabe973",
+                "label": "参加費",
+                "name": "EntryData_Fee3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の参加費を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f694ffcbe974",
+                "label": "定員",
+                "name": "EntryData_Capacity3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "会場の定員数を記載",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "events"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "revisions",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": true,
+        "description": "",
+        "show_in_rest": false
+    }
+]
